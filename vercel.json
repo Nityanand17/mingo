@@ -5,21 +5,17 @@
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "frontend/dist"
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/frontend/dist/$1"
-    },
-    {
       "handle": "filesystem"
     },
     {
-      "src": "/.*",
-      "dest": "/frontend/dist/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 } 

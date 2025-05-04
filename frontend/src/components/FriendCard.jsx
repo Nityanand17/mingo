@@ -11,7 +11,7 @@ const FriendCard = ({ friend }) => {
       <div className="card-body p-4">
         {/* USER INFO */}
         <div className="flex items-center gap-3 mb-3">
-          <div className="avatar size-8 online">
+          <div className="avatar size-12 online">
             <img src={friend.profilePic} alt={friend.fullName} />
             <span className={`badge badge-xs badge-${isOnline ? 'success' : 'neutral'} absolute bottom-0 right-0`}></span>
           </div>
